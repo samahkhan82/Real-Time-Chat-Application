@@ -1,0 +1,175 @@
+/* App.css */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+/* Form styling for login and register */
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+  border-color: #326eb3;
+  outline: none;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+/* Link styling */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Chat page styling */
+.chat-header {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.chat-container {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 1rem;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #fafafa;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.message strong {
+  color: #4a90e2;
+}
+
+.message p {
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+/* Chat input area */
+.chat-input {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.chat-input input[type="text"] {
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chat-input button {
+  padding: 0.75rem 1.5rem;
+}
+
+/* File upload button */
+.file-upload {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.file-upload input[type="file"] {
+  flex: 1;
+}
+
+.file-upload button {
+  margin-left: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .chat-header,
+  .chat-container,
+  .chat-input {
+    padding: 0.5rem;
+  }
+}
